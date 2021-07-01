@@ -1,0 +1,173 @@
+*{
+    transition: 0.3s;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+main .back-image {
+    background-image: url(https://dummyimage.com/1920x1080); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+main .mask{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mask .word{
+    padding: 0 6rem;
+    color: white;
+}
+
+.mask .word h2{
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .025em;
+}
+
+.mask .word p{
+    font-size: 30px;
+    line-height: 2.25rem;
+}
+
+
+.mask .col-12 svg{
+    width: auto;
+    height: 4rem;
+}
+
+.mask .blue{
+    width: 100%;
+    height: 100vh;
+    background-color: #162446; 
+}
+
+.mask .right{
+    padding: 0 4rem;
+}
+
+
+.mask .col-12 .link{
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid white;
+    
+}
+
+.mask .col-12 p{
+    color: white;
+    font-size: 16px; 
+    margin: 0; 
+}
+
+.form{
+    width: 66.6667%;
+}
+
+.mask .row .col-12 input{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    background-color: black;
+    font-size: 18px;
+    border: black;
+}
+
+.mask .row .col-12 .email, .mask .row .col-12 .password{
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+
+.mask .col-12 a{
+    text-align: right;
+    width: 66.67%; 
+    color: gray;
+}
+
+.mask .col-12 a:hover{
+    transition: 1.5s;
+    color: white;
+}
+
+.mask .row .col-12 button{
+    width: 100%;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color:rgb(99, 102, 241);
+    border: 0px;
+    color: white;
+}
+
+.mask .row .col-12 button:hover{
+    cursor: pointer;
+    background-color:rgb(79,70,229);
+
+}
+
+.mask .row .col-12 .signin{
+padding: 16px 16px 8px 16px;
+}
+
+.mask .links{
+    width: 50%;
+    bottom: 0;
+}
+
+@media(max-width: 992px){
+
+    .mask .right{
+        padding: 2rem 0 10rem 0;
+    }
+    .word{
+        display: none;
+    }
+    .mask .blue{
+       display: none;
+    }
+
+    .mask .links{
+        /* background-color: #162446; */
+        width: 100%;
+        padding-bottom: 11rem;
+        /* bottom: -65px;
+        padding: 0 0 40px 0; */
+    }
+
+}
+
+@media(max-width: 640px){
+
+    .mask .col-12 svg {
+        height: 3rem;
+    }
+    .form{
+        width: 100%;
+        padding: 0 0.75rem
+    }
+    .mask .links{
+       margin-top: -70px;
+    }
+
+    .mask .links{
+        padding-bottom: 12rem;
+
+    }
+
+}
+
+
+

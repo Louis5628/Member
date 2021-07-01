@@ -1,0 +1,43 @@
+span{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+label{
+    width: 100%;
+}
+
+
+.step.line.all::after{
+    content: '';
+    width: 75%;
+    height: 8px;
+    background-color:rgb(110, 231, 183);
+    /* background-color:red; */
+    border-radius: 12px;
+
+    position: absolute;
+    right: -38%;
+    top: 27%;
+    transform: translateY(-50%);
+}
+
+
+@media(max-width:768px){
+    .step.line.all::after{
+    content: '';
+    width: 40%;
+    height: 8px;
+    background-color:rgb(110, 231, 183);
+    /* background-color:red; */
+    border-radius: 12px;
+
+    position: absolute;
+    right: -20%;
+    top: 30%;
+    transform: translateY(-50%);
+    }
+}
+
+

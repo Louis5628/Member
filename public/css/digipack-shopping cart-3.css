@@ -1,0 +1,48 @@
+
+
+.col-12{
+    width: 100%;
+}
+
+label{
+    width: 100%;
+}
+
+input{
+    background-color: transparent;
+    border: 2px solid #e5e7eb;
+}
+
+
+.step.line.all::after{
+    content: '';
+    width: 75%;
+    height: 8px;
+    background-color:rgb(110, 231, 183);
+    /* background-color:red; */
+    border-radius: 12px;
+
+    position: absolute;
+    right: -38%;
+    top: 27%;
+    transform: translateY(-50%);
+}
+
+
+@media(max-width:768px){
+    .step.line.all::after{
+    content: '';
+    width: 40%;
+    height: 8px;
+    background-color:rgb(110, 231, 183);
+    /* background-color:red; */
+    border-radius: 12px;
+
+    position: absolute;
+    right: -20%;
+    top: 30%;
+    transform: translateY(-50%);
+    }
+}
+
+

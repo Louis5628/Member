@@ -1,0 +1,38 @@
+
+.product img{
+width: 60px;
+height: 60px;
+}
+
+.product input{
+    width: 2rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border:1px solid #e5e7eb
+    
+}
+
+small.num{
+    color: rgba(156,163,175)
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addBtn, .subBtn{
+cursor: pointer;
+border: none;
+width: 30px;;
+height: 100%;
+background-color: rgb(243,244,246);
+outline: none;
+}
+
+@media(max-width:768px){
+  .addBtn{
+      margin-right: 0;
+  }
+}

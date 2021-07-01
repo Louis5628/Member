@@ -1,0 +1,616 @@
+body {
+    margin: 0;
+
+}
+
+/* main .container {
+    max-width: 85%;
+} */
+
+#carouselExampleIndicators {
+    z-index: -99;
+}
+
+
+main .carousel .carousel-inner .carousel-item img {
+    height: calc(100vh - 92px);
+}
+
+.swiper-container {
+    width: 100%;
+    height: calc(100vh - 92px);
+}
+
+.swiper-slide img {
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://dummyimage.com/1920x1080); */
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+}
+
+
+main .container .section-1 {
+    padding: 96px 20px;
+
+}
+
+.section-1 .row h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-1 .row .col-md-4 {
+    padding: 16px;
+}
+
+main .container .section-1 .row p.blue-line {
+    position: relative;
+    margin-bottom: 110px;
+}
+
+main .container .section-1 .row p.blue-line::after {
+    content: "";
+    width: 64px;
+    height: 4px;
+    background-color: blue;
+
+
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 32px);
+
+}
+
+.section-1 .rounded-circle {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(224, 231, 255);
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 svg {
+    width: 40px;
+    height: 40px;
+    color: rgb(99, 102, 241);
+}
+
+.section-1 .row h2 {
+    font-size: 18px;
+}
+
+.section-1 .row p {
+    font-size: 16px;
+}
+
+.section-1 .row button {
+    background-color: rgb(99, 102, 241);
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.section-2 {
+    padding: 96px 20px;
+}
+
+.section-2 .pic {
+    padding: 0;
+    padding: 0.5rem;
+}
+
+
+main .section-2 .row h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+
+main .section-3 {
+    padding: 96px 20px;
+}
+
+main .section-3 h1 {
+    font-size: 36px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+main .section-3 p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+main .section-3 .container {
+    width: 66.667%;
+    padding: 0;
+}
+
+main .section-3 th {
+  font-weight: 500;
+}
+
+
+main .section-4 {
+    padding: 96px 20px;
+}
+
+
+main .section-4 .row h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+main .container .section-4 .row h1.blue-line {
+    position: relative;
+    /* margin-bottom: 5px; */
+}
+
+main .container .section-4 .row h1.blue-line::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+main .section-4 .row .card {
+    background-color: rgb(243, 244, 246);
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+main .section-4 .row .card h5 {
+    margin-bottom: 16px;
+}
+
+
+
+main .section-4 .row .card p small {
+    font-size: 12px;
+    color: rgb(220, 174, 241);
+}
+
+main .section-5 {
+    padding: 96px 20px;
+
+}
+
+
+.section-5 .row {
+    /* padding-bottom: 40px; */
+    margin: 0 20% 40px 20%;
+}
+
+.section-5 .rounded-circle {
+    width: 128px;
+    height: 128px;
+    background-color: rgb(224, 231, 255);
+    /* margin-right: 30px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5 svg {
+    width: 64px;
+    height: 64px;
+    color: rgb(99, 102, 241);
+}
+
+.section-5 .row h2 {
+    font-size: 18px;
+}
+
+.section-5 .row p {
+    font-size: 16px;
+}
+
+.section-5 .button {
+    width: 100%;
+}
+
+.section-5 button {
+    background-color: rgb(99, 102, 241);
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+}
+
+main .section-6 .row {
+    padding: 96px 20px;
+    margin-right: 10%; margin-left: 10%;
+}
+
+.section-6 img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.section-6 h2 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.section-6 h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-6 svg.star {
+    width: 16px;
+    height: 16px;
+    color: rgb(99, 102, 241);
+}
+
+.section-6 .review span {
+    font-size: 16px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.section-6 .review span::after {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 85px;
+
+}
+
+.section-6 a svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(117, 125, 143);
+}
+
+.section-6 .review a .facebook {
+    margin-left: 30px;
+}
+
+
+.section-6 .btn-group .btn {
+    width: 28px;
+    height: 28px;
+    margin: 0 4px;
+    border: 2px solid #e5e7eb;
+}
+
+.section-6 .btn-group .btn.white {
+    background-color: white;
+}
+
+.section-6 .btn-group .btn.black {
+    background-color: black;
+}
+
+.section-6 .btn-group .btn.blue {
+    background-color: rgb(99, 102, 241);
+}
+
+.section-6 .size .size-select option {
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-6 .price span {
+    font-size: 24px;
+}
+
+.section-6 .price .btn-group .button button {
+    border-radius: 5px;
+    margin: 0;
+    background-color: rgb(99, 102, 241);
+}
+
+.section-7 .container {
+    /* max-width: 95%; */
+    padding: 96px 20px;
+}
+
+.section-7 .row img {
+    object-fit: cover;
+}
+
+.section-7 .row h3 {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 4px;
+}
+
+.section-7 .row h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+
+.section-8 .position-absolute {
+    z-index: 0;
+    background-color: rgb(209, 213, 219);
+}
+
+.section-8 iframe {
+    filter: grayscale(100%) opacity(0.4) contrast(1.2);
+}
+
+
+.section-8 .container {
+    max-width: 75%;
+    padding: 96px 20px;
+}
+
+
+
+.section-8 .container .row .col-md-0 {
+    z-index: -1;
+}
+
+
+.section-8 .container .row .col-md-12 {
+    z-index: 1;
+    background-color: white;
+    border: 0 solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.section-8 h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section-8 label {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.section-8 input {
+    border: 1px solid #e5e7eb;
+}
+
+.section-8 textarea {
+    resize: none;
+    border: 1px solid #e5e7eb;
+}
+
+.section-8 .button {
+    width: 100%;
+}
+
+.section-8 .button button {
+    width: 100%;
+    height: 44px;
+    font-size: 18px;
+    background-color: rgb(99, 102, 241);
+}
+
+@media (min-width: 576px) {
+    main .container{
+        max-width: 576px;
+    }
+    
+}
+
+@media (min-width: 640px) {
+    main .container{
+        max-width: 640px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    main .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .container{
+        max-width: 1024px;
+    }
+
+    .section-6 img {
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    main .container{
+        max-width: 1280px;
+    }
+
+
+}
+@media (min-width: 1536px) {
+    main .container{
+        max-width: 1536px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    main .container {
+        margin: auto;
+    }
+
+    main .section-2 .row h1 {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    main .section-3 .container {
+        width: 100%;
+    }
+
+    .section-5 .row {
+        margin: 0 0 40px 0;
+    }
+
+    /* .section-6 .container {
+        max-width: 100%;
+    } */
+
+    main .section-6 .row {
+        margin-right: 0; margin-left: 0;
+    }
+
+    .section-6 img {
+        width: 100%;
+        height: 16rem;
+    }
+
+    /* .section-7 .container {
+        max-width: 85%;
+    } */
+
+    .section-8 .container {
+        max-width: 80%;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* main .carousel .carousel-inner .carousel-item img {
+        height: unset;
+    } */
+
+    .swiper-container {
+        width: 100%;
+        height: 70vw;
+    }
+  
+    .section-2 .pic {
+        padding: 0;
+        padding: 4px;
+    }
+
+    main .container .section-2 .row h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    main .section-3 h1 {
+        font-size: 30px;
+    }
+
+    main .section-4 .row h1 {
+        font-size: 24px;
+    }
+
+    main .section-4 img{
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .section-5 .row {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .section-5 .col-12 h2 {
+        text-align: center;
+    }
+
+    .section-5 .col-12 p {
+        text-align: center;
+    }
+
+    .section-5 .col-12 a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-5 .rounded-circle {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .section-5 svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-5 .col-12.col-md-9 {
+        margin-top: 24px;
+    }
+
+    .section-7 .container {
+        max-width: 100%;
+    }
+
+    .section-8 .container .row .col-md-12 {
+        margin-top: 40px;
+    }
+
+    .section-8 .container {
+        max-width: 80%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    main .container {
+        max-width: 100%;
+        margin: auto;
+
+    }
+
+    main .container .section-1 .row .col-12 h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    main .container .section-1 .row p.blue-line {
+        margin-bottom: 80px;
+    }
+
+    main .section-2 .row h1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .section-6 .container {
+        max-width: 100%;
+
+    }
+
+    .section-7 .container {
+        max-width: 100%;
+
+    }
+
+    .section-8 .container {
+        max-width: 95%;
+    }
+
+
+}

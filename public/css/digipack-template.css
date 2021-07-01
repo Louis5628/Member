@@ -1,0 +1,364 @@
+body{
+    font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+nav .container .navbar {
+    padding: 0 32px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.navbar-collapse .dropdown-menu{
+    position: absolute;
+    top: 50px;
+    left: -30px;
+}
+
+
+.navbar-collapse {
+    background-color: white;
+    z-index: 99;
+}
+
+nav .container .navbar .logo img {
+    width: 40%;
+}
+
+.navbar-collapse a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.navbar-collapse .shop-cart {
+    font-size: 24px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-collapse .account {
+    font-size: 30px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.dropdown-toggle::after{
+display: none;
+}
+
+.navbar-collapse .dropdown-menu{
+    z-index: 99;
+}
+
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 457px);
+}
+
+
+footer {
+    width: 100%;
+}
+
+footer .container{
+    max-width: 1536px;
+}
+
+footer .container .footer-up {
+    padding: 96px 20px;
+}
+
+
+footer .container .footer-up .col-12 a p {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+footer .container .footer-up .col-12 p {
+    font-size: 14px;
+    text-align: center;
+}
+
+footer .container .footer-up .col-12 p {
+    text-align: left;
+}
+
+
+
+/* footer .container .footer-up .col-md-10{
+    margin-top: 40px;
+} */
+
+footer .container .footer-up .col-12 h2 {
+    font-size: 14px;
+    /* margin-bottom: 12px; */
+}
+
+
+footer .container .footer-up .col-12 ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+footer .container .footer-up .col-12 li {
+    font-size: 16px;
+}
+
+footer .container .footer-up .col-12.col-md-6 {
+    padding-left: 100px;
+}
+
+
+footer .footer-down .container {
+    max-width: 85%;
+    margin: auto;
+
+}
+
+
+footer .footer-down {
+    /* padding: 16px 20px; */
+    background-color: rgb(243, 244, 246);
+}
+
+footer .footer-down .row p,
+footer .footer-down .row a {
+    font-size: 14px;
+    color: rgb(75, 85, 99)
+}
+
+footer .footer-down .container .row span a {
+    margin-left: 12px;
+
+
+}
+
+footer .footer-down .container .col-12 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container{
+    max-width: 100%;
+}
+
+
+@media (min-width: 640px) {
+    footer .container{
+        max-width: 640px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    footer .container{
+        max-width: 768px;
+    }
+
+    footer .footer-down .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer .container{
+        max-width: 1024px;
+    }
+
+    footer .footer-down .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    footer .container{
+        max-width: 1280px;
+    }
+
+    footer .footer-down .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    footer .container{
+        max-width: 1536px;
+    }
+
+    footer .footer-down .container {
+        max-width: 1536px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /* .navbar{
+        position: relative;
+    } */
+
+    .navbar-collapse .dropdown{
+       justify-content: center;
+
+    }
+
+    /* .navbar-collapse .dropdown-menu{
+        position: absolute;
+        top: 70px;
+        left: -350%;
+        width: calc(100vw - 120px);
+    } */
+
+    .navbar-collapse .navbar-nav li {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navbar-collapse .navbar-nav button{
+      width: 100%;
+      padding: 0;
+      margin-top: 0.5rem;
+    }
+
+    .navbar-collapse .shop-cart {
+        margin-left: 0;
+
+    }
+
+    .navbar-collapse .account {
+        margin-left: 0;
+    }
+
+    footer .container .footer-up .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    footer .container .footer-up .col-12 p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    footer .container .footer-up .col-12.col-md-6 {
+        /* margin-top: 50px; */
+        padding-left: 0;
+    }
+
+    footer .container .footer-up .col-12.col-md-6 h2 {
+        margin-bottom: 12px;
+    }
+
+    footer .container .footer-up .col-12.col-md-6 ul {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    nav .container .navbar {
+        height: 77px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav .container .navbar .logo img {
+        width: 30%;
+    }
+
+    /* .navbar-collapse .dropdown-menu{
+        right: -280%;
+        width: calc(100vw - 100px);
+    } */
+
+    footer .container .footer-up .col-12 a {
+        margin: auto;
+
+    }
+
+    footer .container .footer-up .col-12 a p {
+        margin: auto;
+
+    }
+
+    footer .container .footer-up .col-12 p {
+        margin: auto;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+
+    nav .container .navbar {
+        height: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .container .navbar .navbar-brand {
+        padding: 0;
+    }
+
+    nav .container .navbar .logo img {
+        width: 20%;
+    }
+
+
+    footer .container .footer-up .col-12.col-md-9 {
+        margin-top: 40px;
+    }
+
+    footer .footer-down .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-down .container .row {
+        padding: 16px 20px
+    }
+
+
+    footer .footer-down .container p {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-down .container .col-12 span {
+        width: 100%;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
