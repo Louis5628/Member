@@ -15,6 +15,10 @@ class ShoppingCartCheck
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if (\Cart::isEmpty()) {
+            return redirect('/product')->with('message', '請選擇商品再進行結帳。');
+        } else {
+            return $next($request);
+        }
     }
 }

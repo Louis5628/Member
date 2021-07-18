@@ -68,4 +68,10 @@
 
 @section('js')
 
+<script>
+    $(document).ready(function() {
+        $('#content').summernote();
+    });
+</script>
+
 @endsection

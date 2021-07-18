@@ -39,7 +39,7 @@
                                         <th>日期</th>
                                         <th>標題</th>
                                         <th>圖片</th>
-                                        <th>內容</th>
+                                        
                                         <th>操作</th>
                                     </tr>
                                 </thead>
@@ -52,7 +52,7 @@
                                         <td>
                                             <img style="width:200px;" src="{{ asset($item->img) }}" alt="">
                                         </td>
-                                        <td>{{ $item->content }}</td>
+                                        
                                         <td>
                                             <a class="btn btn-primary btn-sm" href="{{ asset('/admin/news/edit') }}/{{ $item->id }}">編輯</a>
                                             <form style="display: inline-block" action="{{ asset('/admin/news/delete') }}/{{ $item->id }}" method="POST">
@@ -71,7 +71,7 @@
                                         <th>日期</th>
                                         <th>標題</th>
                                         <th>圖片</th>
-                                        <th>內容</th>
+                                        
                                         <th>操作</th>
                                     </tr>
                                 </tfoot>

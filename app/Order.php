@@ -40,9 +40,9 @@ class Order extends Model
      */
     protected $fillable = ['user_id', 'order_no', 'name', 'phone', 'email', 'county', 'district', 'zipcode', 'address', 'price', 'pay_type', 'is_paid', 'shipping', 'shipping_fee', 'shipping_status_id', 'order_status_id', 'remark', 'created_at', 'updated_at'];
 
-    public function details(Type $var = null)
+    public function details()
     {
-        return $this->hasMany('App\OrderDetail',,)
+        return $this->hasMany('App\OrderDetail','order_id','id');
     }
 
 }

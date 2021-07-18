@@ -51,8 +51,10 @@
     <div class="col-12 product d-flex flex-row justify-content-between">
         <!-- 產品與數量 -->
         <div class="col-6 col-md-5 d-flex flex-row align-items-center px-0">
+            <button type="button" class="del-btn mr-2 btn-sm" data-id="{{ $product->id }}">X</button>
             <!-- 產品 -->
             <div class="col-4 col-md-2 px-0">
+               
                 <img class="rounded-circle p-0" src="{{ asset($product->attributes->photo) }}" alt="">
             </div>
             <div class="col-8 ml-2 col-md-10 d-flex flex-column px-0">
@@ -263,6 +265,32 @@
                 
             })
         })
+
+        var delBtns = document.querySelectorAll('.del-btn');
+        delBtns.forEach(function (delBtn){
+            delBtn.addEventListener('click', function () {
+                var productId = this.getAttribute('data-id');
+
+                var formData = new FormData();
+                formData.append('_token','{{csrf_token()}}');
+                formData.append('productId',productId);
+
+                var delElement = this;
+                fetch('/shopping-cart/delete',{
+                    'method':'POST',
+                    'body':formData
+                }).then(function (response) {
+                    return response.text();
+                }).then(function (result) {
+                    if(result == 'success'){
+                        delElement.parentElement.parentElement.remove();
+                        updateShoppingCart();
+                    }
+                    
+                })
+                
+            });
+        });
 
         window.addEventListener('load',function () {
             updateShoppingCart();
